@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traducteur</title>
+    <link rel="stylesheet" href="popup.css" />
+    <script src="popup.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Traducteur</h1>
+        <p>FR → EN</p>
+      </div>
+
+      <div class="content">
+        <div class="input-group">
+          <input
+            type="text"
+            id="wordInput"
+            placeholder="Entrez un mot..."
+            autocomplete="off"
+          />
+          <button id="searchBtn">Rechercher</button>
+        </div>
+
+        <div id="result" class="result hidden">
+          <div class="result-item">
+            <span class="label">Traduction en anglais :</span>
+            <span id="englishWord" class="word"></span>
+          </div>
+        </div>
+
+        <div id="error" class="error hidden"></div>
+
+        <div id="loading" class="loading hidden">
+          <span class="spinner"></span>
+          <p>Traduction en cours...</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
